@@ -11,6 +11,7 @@ async function checkWeather(city) {
     if (response.status === 404) {
         document.querySelector(".error").style.display = "block";
         document.querySelector(".weather").style.display = "none";
+        document.querySelector(".forecast").style.display = "none";
     } else {
         const data = await response.json();
         document.querySelector(".city").innerHTML = data.name;
