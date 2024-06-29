@@ -98,6 +98,5 @@ searchBtn.addEventListener("click", () => {
         loadCitiesToDatalist();
     }
 });
-
 // Load the city suggestions on page load
 window.addEventListener("load", loadCitiesToDatalist); 
